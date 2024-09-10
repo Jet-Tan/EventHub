@@ -1,9 +1,8 @@
-import { View, Text, StyleProp, ViewStyle, TextStyle, TouchableOpacity } from 'react-native'
-import React, { ReactNode } from 'react'
-import TextComponent from './TextComponent';
-import { globalStyle } from '../styles/globalStyles';
+import React, { ReactNode } from 'react';
+import { StyleProp, TextStyle, TouchableOpacity, ViewStyle } from 'react-native';
 import { appColor } from '../constants/appColors';
-import { fontFamilies } from '../constants/fontFamilies';
+import { globalStyle } from '../styles/globalStyles';
+import TextComponent from './TextComponent';
 
 
 interface Props {
@@ -39,7 +38,7 @@ const ButtonComponent = (props: Props) => {
         <TouchableOpacity>
             <TextComponent
                 text={text}
-                color={type === 'link' ? appColor.primary : appColor.tex}
+                color={type === 'link' ? appColor.primary : appColor.text}
             />
         </TouchableOpacity>
     )
